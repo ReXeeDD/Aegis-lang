@@ -1,0 +1,16 @@
+version: 2
+updates:
+  # 1. GitHub Actions Update (Ensuring CI/CD Security)
+  - package-ecosystem: "CI"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # 2. Updating the C/C++ package manager
+  - package-ecosystem: "vcpkg"
+    directory: "/"
+    schedule:
+      interval: "daily"
+  assignees:
+      - "rii125-125"
+      - "rii_125"
