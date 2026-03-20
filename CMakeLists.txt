@@ -1,0 +1,17 @@
+# Specifying the minimum CMake version
+cmake_minimum_required(VERSION 3.10)
+
+# Project Name and Programming Language
+project(AegisCompiler LANGUAGES CXX)
+
+# Specify the C++ standard (We recommend using modern C++20 or C++17 for Aegis development)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Specify the name of the executable file and the source files to include in the build
+add_executable(aegis
+    src/main.cpp
+)
+
+# Specifying the include path (where to look for header files)
+target_include_directories(aegis PRIVATE src)
