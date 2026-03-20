@@ -19,6 +19,7 @@ endforeach()
 # Specify the name of the executable file and the source files to include in the build
 add_executable(aegis
     src/main.cpp
+    src/ast/lexer.cpp
 )
 
 # Specifying the include path (where to look for header files)
