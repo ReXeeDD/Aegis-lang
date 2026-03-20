@@ -5,12 +5,8 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-
   # 2. Updating the C/C++ package manager
-  - package-ecosystem: "vcpkg"
+  - package-ecosystem: "cmake"
     directory: "/"
     schedule:
       interval: "daily"
-  assignees:
-      - "rii125-125"
-      - "rii_125"
