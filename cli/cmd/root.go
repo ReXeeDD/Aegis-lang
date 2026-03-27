@@ -9,9 +9,10 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
+
+	"Aegis-lang/ver"
 )
 
-var ver string = "0.3.0"
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
@@ -21,7 +22,7 @@ var rootCmd = &cobra.Command{
 > A language that makes type safety and robust code more intuitive and easier to understand.`,
 	Run: func(cmd *cobra.Command, args []string) {
     	fmt.Println("Hello! Aegis!\n-------------")
-		fmt.Println("Version" + ver)
+		fmt.Println(ver.Ver)
 	},
 }
 
